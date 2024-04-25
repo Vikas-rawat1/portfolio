@@ -1,5 +1,6 @@
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
+import Contact from "./Contact";
 
 function Projects() {
   const defaultOptions = {
@@ -32,7 +33,8 @@ function Projects() {
       imageUrl: "Images/works/clothing.jpg",
       projectLink: "https://vikas-rawat1.github.io/clothing_landing_page/",
       githubLink: "https://github.com/Vikas-rawat1/clothing_landing_page",
-      description: "THis is Simple landing page of clothing brand made up with HTML,CSS and JavaScript",
+      description:
+        "THis is Simple landing page of clothing brand made up with HTML,CSS and JavaScript",
     },
   ];
 
@@ -75,20 +77,23 @@ function Projects() {
   );
 
   return (
-    <div className="bg-black">
-      <p className="text-3xl text-center mt-40">My Works</p>
-      <div className="mt-20 flex flex-wrap justify-center">
-        {projects.map((project, index) => (
-          <ProjectThumbnail
-            key={index}
-            imageUrl={project.imageUrl}
-            projectLink={project.projectLink}
-            githubLink={project.githubLink}
-            description={project.description}
-          />
-        ))}
+    <>
+      <div className="bg-black">
+        <p className="text-3xl text-center mt-40">My Works</p>
+        <div className="mt-20 flex flex-wrap justify-center">
+          {projects.map((project, index) => (
+            <ProjectThumbnail
+              key={index}
+              imageUrl={project.imageUrl}
+              projectLink={project.projectLink}
+              githubLink={project.githubLink}
+              description={project.description}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <Contact />
+    </>
   );
 }
 
