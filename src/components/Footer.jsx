@@ -81,7 +81,7 @@ function Footer() {
                     htmlFor="phone"
                     className="block text-sm font-medium text-white mb-2"
                   >
-                    Mobile Number:
+                    Mobile Number:ds
                   </label>
                   <input
                     type="tel"
