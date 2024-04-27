@@ -6,7 +6,7 @@ import About from "./About";
 function Navbar() {
   return (
     <>
-      <div className="flex justify-between list-none m-auto items-center bg-black text-white">
+      <div className="hidden lg:flex lg:justify-between lg:list-none lg:m-auto lg:items-center bg-black text-white">
         <div>
           <ul>
             <li className="font-saira-stencil font-bold text-2xl">
@@ -29,8 +29,8 @@ function Navbar() {
       </div>
       <div className=" relative">
         <img src="Images/bg.gif" alt="" className="w-full h-screen" />
-        <div className="absolute top-40 text-white m-auto ml-60">
-          <p className="text-xl">Hello 👋</p>
+        <div className="lg:text-left ml-24 top-60  absolute lg:top-40 text-white m-auto lg:ml-60  ">
+          <p className="text-2xl lg:ml-0  lg:text-xl">Hello 👋</p>
           <h1 className="text-3xl font-sedan font-bold">
             I,m <span className="text-red-500">Vikas Rawat</span>
           </h1>
@@ -38,7 +38,6 @@ function Navbar() {
             <Typewriter
               options={{
                 strings: ["Web Developer", "Web Designer"],
-
                 autoStart: true,
                 loop: true,
               }}

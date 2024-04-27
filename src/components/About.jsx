@@ -14,24 +14,28 @@ function About() {
     <>
       <div className="bg-black text-white">
         <p className="text-4xl text-center"> About Me</p>
-        <div className="grid grid-cols-2">
-          <div>sdaff</div>
+        <div className="lg:grid lg:grid-cols-2 mt-20">
           <div>
-            <p className="mt-5">I'm Vikas Rawat</p>
-            <p className="mt-5">
+            <img src="Images/about.png" alt="" className="w-4/5 m-auto" />
+          </div>
+          <div>
+            <p className="text-2xl text-center mt-16 lg:text-left lg:mt-5">
+              I'm Vikas Rawat
+            </p>
+            <p className="text-xl mt-10 w-4/5 m-auto lg:w-4/5 lg:m-0 lg:text-base lg:mt-5">
               Hey there, I'm Vikas, currently pursuing my Bachelor's in Computer
               Applications (BCA) from ITM University, Gwalior. As an aspiring
               tech enthusiast, I've always been captivated by the world of
               computers and technology.
             </p>
-            <p className="mt-2 mb-10">
+            <p className="text-xl  mt-10 w-4/5 m-auto lg:m-0 lg:w-4/5 lg:text-base lg:mt-2 mb-20">
               My interest in computers began out of simple curiosity, but it
               quickly turned into a deep passion for learning and improving.
               I've gone from learning programming languages to figuring out how
               websites are built and managing databases. Each new challenge I
               face only makes me more eager to keep growing and learning.
             </p>
-            <p className="mb-20">
+            <p className="text-center mb-20 lg:text-left lg:mt-10 ">
               <Button
                 variant="contained"
                 href="https://www.linkedin.com/in/vikas-rawat1/"
@@ -58,7 +62,7 @@ function About() {
             <div className="mt-20">
               <div className="relative ">
                 <p className="lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
-                 <span className="border w-2/5 flex"></span> MY SKILLS
+                  <span className="border w-2/5 flex"></span> MY SKILLS
                 </p>
               </div>
               <p className="text-3xl w-3/5 font-poppins font-bold m-auto">
@@ -156,7 +160,7 @@ function About() {
             </div>
           </div>
         </div>
-      <Projects/>
+        <Projects />
       </div>
     </>
   );
