@@ -1,5 +1,5 @@
 import { Button, Tooltip, useMediaQuery } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
@@ -12,9 +12,8 @@ function About() {
     setSkills(skills);
   };
 
-
-  const theme= useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
       <div className="bg-black text-white">
@@ -81,8 +80,8 @@ function About() {
               <div className="w-4/5 flex gap-10 m-auto mt-8 lg:w-3/5">
                 <Button
                   sx={{
-                    fontSize: isMobile ? '4vw' : '1vw',
-                    fontWeight: isMobile ? 'bold':'normal',
+                    fontSize: isMobile ? "4vw" : "1vw",
+                    fontWeight: isMobile ? "bold" : "normal",
                     backgroundColor: "orange",
                     color: "white",
                   }}
@@ -93,8 +92,8 @@ function About() {
                 </Button>
                 <Button
                   sx={{
-                    fontSize: isMobile ? '4vw' : '1vw',
-                    fontWeight: isMobile ? 'bold':'normal',
+                    fontSize: isMobile ? "4vw" : "1vw",
+                    fontWeight: isMobile ? "bold" : "normal",
                     backgroundColor: "orange",
                     color: "white",
                   }}
@@ -103,8 +102,8 @@ function About() {
                 </Button>
                 <Button
                   sx={{
-                    fontSize: isMobile ? '4vw' : '1vw',
-                    fontWeight: isMobile ? 'bold':'normal',
+                    fontSize: isMobile ? "4vw" : "1vw",
+                    fontWeight: isMobile ? "bold" : "normal",
                     backgroundColor: "orange",
                     color: "white",
                   }}
@@ -140,7 +139,7 @@ function About() {
                 <div>
                   {skills === "tools" && (
                     <>
-                    <div className="m-auto mt-10 justify-center flex flex-wrap gap-10 lg:mt-0">
+                      <div className="m-auto mt-10 justify-center flex flex-wrap gap-10 lg:mt-0">
                         <Tooltip title="Vs-code">
                           <img src="Images/Skills/vs.png" alt="VS-CODE" />
                         </Tooltip>
@@ -156,7 +155,7 @@ function About() {
                 <div>
                   {skills === "database" && (
                     <>
-                    <div className="m-auto mt-10 justify-center  flex flex-wrap gap-10 lg:mt-0">
+                      <div className="m-auto mt-10 justify-center  flex flex-wrap gap-10 lg:mt-0">
                         <Tooltip title="MYSql">
                           <img src="Images/Skills/mysql.png" alt="MySql" />
                         </Tooltip>

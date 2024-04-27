@@ -3,6 +3,8 @@ import Button from "@mui/material/Button";
 // import Stack from '@mui/material/Stack';
 import "../App.css";
 import About from "./About";
+// import Menu from "../components/Menu";
+
 function Navbar() {
   return (
     <>
@@ -14,6 +16,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
+
         <div>
           <ul className="flex font-poppins font-bold gap-8">
             <li>Home</li>
@@ -25,6 +28,14 @@ function Navbar() {
           <ul className="flex font-poppins font-bold mr-10">
             <li>Contact</li>
           </ul>
+        </div>
+      </div>
+      {/* <Menu /> */}
+
+      {/* Mobile Logo  */}
+      <div className="bg-black">
+        <div className="lg:hidden justify-center flex items-center font-saira-stencil font-bold text-2xl">
+          <img src="Images/head.gif" alt="Gif" className="h-14" />
         </div>
       </div>
       <div className=" relative">
@@ -54,7 +65,6 @@ function Navbar() {
           </p>
         </div>
       </div>
-
       <About />
     </>
   );
