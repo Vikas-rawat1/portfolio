@@ -9,23 +9,23 @@ function Contact() {
     <>
       <div className="bg-black text-white">
         <div className="relative ">
-          <p className="lg:rotate-90 lg:rotateY-90 lg:absolute lg:mt-10 lg:ml-12">
+        <p className="ml-10 lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
             <span className="border w-2/5 flex"></span> CONTACT
           </p>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2">
           <div className="m-auto mt-2">
-            <p className="font-poppins text-3xl m-auto ml-28 w-3/5">
+            <p className="font-poppins text-3xl w-4/5  lg:text-3xl m-auto lg:ml-28 lg:w-3/5">
               Have You Any Project? Please Drop a Message
             </p>
-            <p className="ml-28 w-3/5 m-auto mt-5">
+            <p className="w-4/5 text-xl  lg:ml-28 lg:w-3/5 lg:text-base m-auto mt-5">
               Get in touch and let me know how i can help. Fill out the form and
               i’ll be in touch as soon as possible.
             </p>
-            <div className="ml-28 w-3/5 m-auto mt-5">
+            <div className="w-4/5 lg:ml-28 lg:w-3/5 m-auto mt-5">
               <p className="text-xl flex items-center">
                 <RiMailFill />
-                <span className="ml-2">Email:</span>
+                <span className="lg:ml-2">Email:</span>
               </p>
               <p>rawatvikas689@gmail.com</p>
             </div>
@@ -34,7 +34,7 @@ function Contact() {
           </div> */}
           </div>
           <div>
-            <div className="border border-gray-500 w-3/5 rounded-xl  p-8 mb-20">
+            <div className="border border-gray-500  mt-10 lg:mt-0 lg:w-3/5 rounded-xl  p-8 lg:mb-20">
               <h2 className="text-2xl font-bold text-white mb-6">Contact Us</h2>
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">

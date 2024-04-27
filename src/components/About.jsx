@@ -1,4 +1,5 @@
-import { Button, Tooltip } from "@mui/material";
+import { Button, Tooltip, useMediaQuery } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
@@ -10,6 +11,10 @@ function About() {
   const handleSkillsChange = (skills) => {
     setSkills(skills);
   };
+
+
+  const theme= useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <>
       <div className="bg-black text-white">
@@ -58,25 +63,26 @@ function About() {
         </div>
         <div className="bg-black text-white ">
           <p className="text-center text-4xl mt-10 ">My Skills</p>
-          <div className="grid-cols-2 grid">
+          <div className="lg:grid-cols-2 lg:grid">
             <div className="mt-20">
               <div className="relative ">
-                <p className="lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
+                <p className="ml-10 lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
                   <span className="border w-2/5 flex"></span> MY SKILLS
                 </p>
               </div>
-              <p className="text-3xl w-3/5 font-poppins font-bold m-auto">
-                What My Programming Skills Included?
+              <p className="mt-5 w-4/5 lg:text-left text-3xl lg:w-3/5 font-poppins font-bold m-auto lg:mt-0">
+                What Are My Programming Skills Included?
               </p>
-              <p className="w-3/5 m-auto mt-5">
+              <p className="w-4/5 text-2xl lg:text-base  lg:w-3/5 m-auto mt-5">
                 I develop simple, intuitive and responsive user interface that
                 helps users get things done with less effort and time with those
                 technologies.
               </p>
-              <div className="flex gap-10 m-auto mt-8 w-3/5">
+              <div className="w-4/5 flex gap-10 m-auto mt-8 lg:w-3/5">
                 <Button
                   sx={{
-                    fontSize: "1vw",
+                    fontSize: isMobile ? '4vw' : '1vw',
+                    fontWeight: isMobile ? 'bold':'normal',
                     backgroundColor: "orange",
                     color: "white",
                   }}
@@ -87,7 +93,8 @@ function About() {
                 </Button>
                 <Button
                   sx={{
-                    fontSize: "1vw",
+                    fontSize: isMobile ? '4vw' : '1vw',
+                    fontWeight: isMobile ? 'bold':'normal',
                     backgroundColor: "orange",
                     color: "white",
                   }}
@@ -96,7 +103,8 @@ function About() {
                 </Button>
                 <Button
                   sx={{
-                    fontSize: "1vw",
+                    fontSize: isMobile ? '4vw' : '1vw',
+                    fontWeight: isMobile ? 'bold':'normal',
                     backgroundColor: "orange",
                     color: "white",
                   }}
@@ -111,7 +119,7 @@ function About() {
               <div>
                 {skills === "skills" && (
                   <>
-                    <div className="flex flex-wrap gap-10">
+                    <div className="m-auto mt-10 justify-center  flex flex-wrap gap-10 lg:mt-0">
                       <Tooltip title="Html">
                         <img src="Images/Skills/html.png" alt="HTML" />
                       </Tooltip>
@@ -132,7 +140,7 @@ function About() {
                 <div>
                   {skills === "tools" && (
                     <>
-                      <div className="flex flex-wrap gap-10">
+                    <div className="m-auto mt-10 justify-center  flex flex-wrap gap-10 lg:mt-0">
                         <Tooltip title="Vs-code">
                           <img src="Images/Skills/vs.png" alt="VS-CODE" />
                         </Tooltip>
@@ -148,7 +156,7 @@ function About() {
                 <div>
                   {skills === "database" && (
                     <>
-                      <div className="flex flex-wrap gap-10">
+                    <div className="m-auto mt-10 justify-center  flex flex-wrap gap-10 lg:mt-0">
                         <Tooltip title="MYSql">
                           <img src="Images/Skills/mysql.png" alt="MySql" />
                         </Tooltip>
