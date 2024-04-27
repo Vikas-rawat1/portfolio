@@ -9,20 +9,20 @@ function Contact() {
     <>
       <div className="bg-black text-white">
         <div className="relative ">
-        <p className="ml-10 lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
-            <span className="border w-2/5 flex"></span> CONTACT
+          <p className="ml-10 lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
+            <span className="border w-16 lg:w-4/5 flex"></span> CONTACT
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2">
           <div className="m-auto mt-2">
-            <p className="font-poppins text-3xl w-4/5  lg:text-3xl m-auto lg:ml-28 lg:w-3/5">
+            <p className="font-poppins text-3xl w-4/5  lg:text-3xl m-auto lg:ml-30 lg:w-3/5">
               Have You Any Project? Please Drop a Message
             </p>
-            <p className="w-4/5 text-xl  lg:ml-28 lg:w-3/5 lg:text-base m-auto mt-5">
+            <p className="w-4/5 text-xl  lg:ml-30 lg:w-3/5 lg:text-base m-auto mt-5">
               Get in touch and let me know how i can help. Fill out the form and
               i’ll be in touch as soon as possible.
             </p>
-            <div className="w-4/5 lg:ml-28 lg:w-3/5 m-auto mt-5">
+            <div className="w-4/5 lg:ml-30 lg:w-3/5 m-auto mt-5">
               <p className="text-xl flex items-center">
                 <RiMailFill />
                 <span className="lg:ml-2">Email:</span>

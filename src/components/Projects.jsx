@@ -47,7 +47,7 @@ function Projects() {
     <Tilt
       options={defaultOptions}
       style={{ height: 300, width: 300 }}
-      className="m-auto mb-20 mr-10"
+      className="m-auto mb-20 lg:mr-10"
     >
       <div className="relative">
         <img
@@ -79,8 +79,8 @@ function Projects() {
   return (
     <>
       <div className="bg-black">
-        <p className="text-3xl text-center mt-40">My Works</p>
-        <div className="mt-20 flex flex-wrap justify-center">
+        <p className="text-3xl text-center mt-20 lg:mt-40">My Works</p>
+        <div className="mt-20 lg:flex lg:flex-wrap justify-center">
           {projects.map((project, index) => (
             <ProjectThumbnail
               key={index}

@@ -67,7 +67,7 @@ function About() {
             <div className="mt-20">
               <div className="relative ">
                 <p className="ml-10 lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
-                  <span className="border w-2/5 flex"></span> MY SKILLS
+                  <span className="border w-16 lg:w-4/5 flex"></span> MY SKILLS
                 </p>
               </div>
               <p className="mt-5 w-4/5 lg:text-left text-3xl lg:w-3/5 font-poppins font-bold m-auto lg:mt-0">
@@ -140,7 +140,7 @@ function About() {
                 <div>
                   {skills === "tools" && (
                     <>
-                    <div className="m-auto mt-10 justify-center  flex flex-wrap gap-10 lg:mt-0">
+                    <div className="m-auto mt-10 justify-center flex flex-wrap gap-10 lg:mt-0">
                         <Tooltip title="Vs-code">
                           <img src="Images/Skills/vs.png" alt="VS-CODE" />
                         </Tooltip>
