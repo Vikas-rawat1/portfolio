@@ -1,7 +1,7 @@
 import { RiMailFill } from "react-icons/ri";
 import { useForm, ValidationError } from "@formspree/react";
 function Contact() {
-  const [state, handleSubmit] = useForm("moqgrqak");
+  const [state, handleSubmit] = useForm("xkndynwy");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
