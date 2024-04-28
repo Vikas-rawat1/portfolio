@@ -4,13 +4,12 @@ import { useState } from "react"; // Import useState hook
 
 function Contact() {
   const [state, handleSubmit] = useForm("xkndynwy");
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" }); // Initialize form data state
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" }); 
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     await handleSubmit(event);
     if (state.succeeded) {
-      // If form submission is successful, clear form data
       setFormData({ name: "", email: "", message: "" });
     }
   };
@@ -58,7 +57,7 @@ function Contact() {
                     placeholder="Enter your name"
                     className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
                     value={formData.name} // Bind value to form data state
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })} // Update form data state on change
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })} 
                     required
                   />
                 </div>
@@ -75,8 +74,8 @@ function Contact() {
                     name="email"
                     placeholder="Enter your email"
                     className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
-                    value={formData.email} // Bind value to form data state
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })} // Update form data state on change
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })} 
                     required
                   />
                 </div>
@@ -93,8 +92,8 @@ function Contact() {
                     placeholder="Enter your message"
                     rows="4"
                     className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
-                    value={formData.message} // Bind value to form data state
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })} // Update form data state on change
+                    value={formData.message} 
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })} 
                     required
                   ></textarea>
                   <ValidationError
