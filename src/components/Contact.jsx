@@ -1,7 +1,7 @@
 import { RiMailFill } from "react-icons/ri";
 import { useForm, ValidationError } from "@formspree/react";
 function Contact() {
-  const [state, handleSubmit] = useForm("mdoqyvwg");
+  const [state, handleSubmit] = useForm("moqgrqak");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
@@ -69,7 +69,7 @@ function Contact() {
                     required
                   />
                 </div>
-                <div className="mb-6">
+                {/* <div className="mb-6">
                   <label
                     htmlFor="phone"
                     className="block text-sm font-medium text-white mb-2"
@@ -84,7 +84,7 @@ function Contact() {
                     className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
                     required
                   />
-                </div>
+                </div> */}
 
                 <div className="mb-6">
                   <label
