@@ -1,14 +1,24 @@
 import { RiMailFill } from "react-icons/ri";
 import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react"; // Import useState hook
+
 function Contact() {
   const [state, handleSubmit] = useForm("xkndynwy");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" }); // Initialize form data state
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    await handleSubmit(event);
+    if (state.succeeded) {
+      // If form submission is successful, clear form data
+      setFormData({ name: "", email: "", message: "" });
+    }
+  };
+
   return (
     <>
       <div className="bg-black text-white">
-        <div className="relative ">
+        <div className="relative">
           <p className="ml-10 lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
             <span className="border w-16 lg:w-4/5 flex"></span> CONTACT
           </p>
@@ -19,8 +29,8 @@ function Contact() {
               Have You Any Project? Please Drop a Message
             </p>
             <p className="w-4/5 text-xl  lg:ml-30 lg:w-3/5 lg:text-base m-auto mt-5">
-              Get in touch and let me know how i can help. Fill out the form and
-              i’ll be in touch as soon as possible.
+              Get in touch and let me know how I can help. Fill out the form and
+              I’ll be in touch as soon as possible.
             </p>
             <div className="w-4/5 lg:ml-30 lg:w-3/5 m-auto mt-5">
               <p className="text-xl flex items-center">
@@ -29,14 +39,11 @@ function Contact() {
               </p>
               <p>rawatvikas689@gmail.com</p>
             </div>
-            {/* <div>
-            <Link> <RiLinkedinBoxFill/> </Link>
-          </div> */}
           </div>
           <div>
-            <div className="border border-gray-500  mt-10 lg:mt-0 lg:w-3/5 rounded-xl  p-8 lg:mb-20">
+            <div className="border border-gray-500 mt-10 lg:mt-0 lg:w-3/5 rounded-xl p-8 lg:mb-20">
               <h2 className="text-2xl font-bold text-white mb-6">Contact Us</h2>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleFormSubmit}>
                 <div className="mb-6">
                   <label
                     htmlFor="name"
@@ -50,6 +57,8 @@ function Contact() {
                     name="name"
                     placeholder="Enter your name"
                     className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
+                    value={formData.name} // Bind value to form data state
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })} // Update form data state on change
                     required
                   />
                 </div>
@@ -66,26 +75,11 @@ function Contact() {
                     name="email"
                     placeholder="Enter your email"
                     className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
+                    value={formData.email} // Bind value to form data state
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })} // Update form data state on change
                     required
                   />
                 </div>
-                {/* <div className="mb-6">
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-white mb-2"
-                  >
-                    Mobile Number:
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Enter your mobile number"
-                    className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
-                    required
-                  />
-                </div> */}
-
                 <div className="mb-6">
                   <label
                     htmlFor="message"
@@ -99,6 +93,8 @@ function Contact() {
                     placeholder="Enter your message"
                     rows="4"
                     className="w-full px-4 py-2 rounded-md bg-gray-500 text-orange-500 text-lg font-poppins outline-none"
+                    value={formData.message} // Bind value to form data state
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })} // Update form data state on change
                     required
                   ></textarea>
                   <ValidationError
@@ -117,25 +113,6 @@ function Contact() {
                 </div>
               </form>
             </div>
-
-            {/* // <form onSubmit={handleSubmit}>
-            //   <label htmlFor="email">Email Address</label>
-            //   <input id="email" type="email" name="email" />
-            //   <ValidationError
-            //     prefix="Email"
-            //     field="email"
-            //     errors={state.errors}
-            //   />
-            //   <textarea id="message" name="message" />
-            //   <ValidationError
-            //     prefix="Message"
-            //     field="message"
-            //     errors={state.errors}
-            //   />
-            //   <button type="submit" disabled={state.submitting}>
-            //     Submit
-            //   </button>
-            // </form> */}
           </div>
         </div>
       </div>
