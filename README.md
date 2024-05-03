@@ -48,6 +48,7 @@ I'm a FrontEnd developer...
 - React, 
 - Git,
 - Tailwind Css
+- MYSql
 
 
 ## Features
