@@ -50,20 +50,6 @@ I'm a FrontEnd developer...
 - Tailwind Css
 
 
-## Screenshots
-
-![screenshot1](https://github.com/Vikas-rawat1/daz3d_clone/assets/121391039/b00a0c99-7ba3-4a57-b244-81c953d0f9f6)
-
-![screenshot2](https://github.com/Vikas-rawat1/daz3d_clone/assets/121391039/288bbcc8-3886-4399-bdaa-30efb9fd0e00)
-
-![screenshot3](https://github.com/Vikas-rawat1/daz3d_clone/assets/121391039/03d81522-330c-4151-9fce-a0bdcd2d5926)
-
-![screenshot4](https://github.com/Vikas-rawat1/daz3d_clone/assets/121391039/11bc25e8-5fa7-46ad-ba6f-df65bac770f2)
-
-![screenshot5](https://github.com/Vikas-rawat1/daz3d_clone/assets/121391039/b59cba86-6f8f-4352-817c-81d8e03c9d33)
-
-![screenshot6](https://github.com/Vikas-rawat1/daz3d_clone/assets/121391039/362b2e0c-4c77-4f29-bfcc-bc32f997e4bb)
-
 ## Features
 
 - Responsive Design: My portfolio is responsive and looks great on various devices, including desktops and smartphones.
