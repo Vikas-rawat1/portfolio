@@ -3,7 +3,7 @@
 
 Welcome to Portfolio !
 
-Welcome to my GitHub portfolio! This repository serves as a showcase of my skills, projects, and contributions in the field of web development.
+Welcome to my portfolio! This repository serves as a showcase of my skills, projects, and contributions in the field of web development.
 
 
 ## Installation
