@@ -17,10 +17,10 @@ function Projects() {
 
   const projects = [
     {
-      imageUrl: "Images/works/daz.jpg",
-      projectLink: "/project",
-      githubLink: "",
-      description: "In Process...",
+      imageUrl: "Images/works/anima.jpg",
+      projectLink: "https://vikas-rawat1.github.io/anima/",
+      githubLink: "https://github.com/Vikas-rawat1/anima",
+      description: "A simple Landing page with animation"
     },
     {
       imageUrl: "Images/works/1.jpg",
