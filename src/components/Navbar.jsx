@@ -7,6 +7,7 @@ import About from "./About";
 import { Link } from "react-router-dom";
 // import { Document, Page } from "react-pdf";
 import { Document, Page } from '@react-pdf/renderer';
+import Projects from "./Projects";
 function Navbar() {
   const pageUrl = "Images/vikasresume.pdf";
   return (
@@ -22,9 +23,9 @@ function Navbar() {
 
         <div>
           <ul className="flex font-poppins font-bold gap-8">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
+            <li to={<Projects/>}>Home</li>
+            <li to={<Projects/>}>About</li>
+            <li to={<Projects/>}>Projects</li>
           </ul>
         </div>
         <div>
