@@ -15,7 +15,7 @@ function Navbar() {
         <div>
           <ul>
             <li className="font-saira-stencil font-bold text-2xl">
-              <img src="Images/head.gif" alt="" className="h-16" />
+              <img src="Imagessdfsadfasdfwe5wasdfasdfewr/head.gif" alt="" className="h-16" />
             </li>
           </ul>
         </div>
