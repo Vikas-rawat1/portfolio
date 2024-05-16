@@ -13,13 +13,13 @@ function Navbar() {
     <>
       <div className="hidden lg:flex lg:justify-between lg:list-none lg:m-auto lg:items-center bg-black text-white">
         <div>
-          <ul>sdfafaf
+          <ul>
             <li className="font-saira-stencil font-bold text-2xl">
               <img src="Images/head.gif" alt="" className="h-16" />
             </li>
           </ul>
         </div>
-xcv
+
         <div>
           <ul className="flex font-poppins font-bold gap-8">
             <li>Home</li>
