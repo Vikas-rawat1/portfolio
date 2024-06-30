@@ -20,7 +20,7 @@ function Projects() {
       imageUrl: "Images/works/anima.jpg",
       projectLink: "https://vikas-rawat1.github.io/anima/",
       githubLink: "https://github.com/Vikas-rawat1/anima",
-      description: "A simple Landing page with animation"
+      description: "A simple Landing page with animation",
     },
     {
       imageUrl: "Images/works/1.jpg",
@@ -36,6 +36,13 @@ function Projects() {
       description:
         "THis is Simple landing page of clothing brand made up with HTML,CSS and JavaScript",
     },
+    {
+      imageUrl: "Images/works/webby.jpg",
+      projectLink: "https://reimagine-awards.netlify.app/",
+      // githubLink: "https://github.com/Vikas-rawat1/clothing_landing_page",
+      description:
+        "This reimagined website provides an engaging user experience with modern web technologies, interactive elements, and rich media content, honoring outstanding developers, designers, and creators worldwide.",
+    },
   ];
 
   const ProjectThumbnail = ({
@@ -47,7 +54,7 @@ function Projects() {
     <Tilt
       options={defaultOptions}
       style={{ height: 300, width: 300 }}
-      className="m-auto mb-20 lg:mr-10"
+      className="m-auto mb-20 md:m-0 md:mb-20 lg:mr-10"
     >
       <div className="relative">
         <img
