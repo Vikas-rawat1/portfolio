@@ -27,15 +27,6 @@ function Home() {
                   }}
                 />
               </p>
-              {/* <p className="mt-10">
-            <Button
-              variant="contained"
-              href="#contained-buttons"
-              className="bg-black"
-            >
-              View Resume
-            </Button>
-          </p> */}
             </div>
           </div>
 
