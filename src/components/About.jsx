@@ -30,7 +30,7 @@ function About() {
               Hey there, I'm Vikas, currently pursuing my Bachelor's in Computer
               Applications (BCA) from ITM University, Gwalior. As an aspiring
               tech enthusiast, I've always been captivated by the world of
-              computers and technology.
+              computers and technology. 
             </p>
             <p className="text-xl  mt-10 w-4/5 m-auto lg:m-0 lg:w-4/5 lg:text-base lg:mt-2 mb-20">
               My interest in computers began out of simple curiosity, but it
