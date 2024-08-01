@@ -21,7 +21,6 @@ function Navbar() {
             </li>
           </ul>
         </div>
-
         <div>
           <ul className="flex font-poppins font-bold gap-8">
             <Link to="/">Home</Link>
@@ -29,14 +28,12 @@ function Navbar() {
             <Link to="/projecttab">Projects</Link>
           </ul>
         </div>
-
         <div>
           <ul className="flex font-poppins font-bold mr-10">
             <li>Contact</li>
           </ul>
         </div>
       </div>
-
       {/* Mobile Navbar */}
       <div className="lg:hidden bg-black text-white">
         <div className="flex items-center justify-between px-6 py-4 font-saira-stencil font-bold text-2xl">
