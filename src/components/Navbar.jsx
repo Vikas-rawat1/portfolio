@@ -24,15 +24,9 @@ function Navbar() {
 
         <div>
           <ul className="flex font-poppins font-bold gap-8">
-            {/* <li> */}
               <Link to="/">Home</Link>
-            {/* </li> */}
-            {/* <li> */}
               <Link >About</Link>
-            {/* </li> */}
-            {/* <li> */}
               <Link to="/projecttab">Projects</Link>
-            {/* </li> */}
           </ul>
         </div>
 
