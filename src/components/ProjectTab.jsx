@@ -79,7 +79,6 @@ function ProjectTab() {
       </div>
     </Tilt>
   );
-
   return (
     <div className="bg-black py-10">
       <p className="text-3xl text-center text-white mb-10">
