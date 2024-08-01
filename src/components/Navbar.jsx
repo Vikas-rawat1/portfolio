@@ -24,9 +24,9 @@ function Navbar() {
 
         <div>
           <ul className="flex font-poppins font-bold gap-8">
-              <Link to="/">Home</Link>
-              <Link >About</Link>
-              <Link to="/projecttab">Projects</Link>
+            <Link to="/">Home</Link>
+            <Link>About</Link>
+            <Link to="/projecttab">Projects</Link>
           </ul>
         </div>
 
@@ -57,20 +57,6 @@ function Navbar() {
             </ul>
           </div>
         )}
-
-        {/* {toggle && (
-          <div className="bg-black text-white flex flex-col px-6 py-4">
-            <ul className="flex flex-col font-poppins font-bold gap-4">
-              <li>
-                <Link to="/" onClick={toggleMenu}>Home</Link>
-              </li>
-              <li>
-                <Link to="/projecttab" onClick={toggleMenu}>Projects</Link>
-              </li>
-              <li>Contact</li>
-            </ul>
-          </div>
-        )} */}
       </div>
     </>
   );
