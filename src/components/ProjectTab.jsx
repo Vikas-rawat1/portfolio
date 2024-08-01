@@ -54,34 +54,26 @@ function ProjectTab() {
     },
   ];
 
-  const ProjectThumbnail = ({
-    imageUrl,
-    projectLink,
-    githubLink,
-    description,
-  }) => (
+  const ProjectThumbnail = ({ imageUrl, projectLink, description }) => (
     <Tilt
       options={defaultOptions}
       style={{ height: 300, width: 300 }}
-      className="m-auto mb-20 md:m-0 md:mb-20 lg:mr-10"
+      className="m-auto mb-10 md:mb-10 lg:mr-6"
     >
       <div className="relative">
         <img
           src={imageUrl}
           alt="Thumbnail"
-          className="w-full object-cover h-72 fit"
+          className="w-full object-cover h-72"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-between bg-gray-800 rounded-md p-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 rounded-md p-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
           <p className="text-white text-lg mb-4">{description}</p>
           <div className="flex justify-center">
             <button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-4 py-2 rounded-md">
-              <Link to={projectLink} className="mt-10">View Project</Link>
+              <Link to={projectLink} className="block">
+                View Project
+              </Link>
             </button>
-            {/* {githubLink && (
-              <button className="bg-gray-700 hover:bg-gray-800 text-white font-semibold px-4 py-2 rounded-md ml-4">
-                <Link to={githubLink}>GitHub Repo</Link>
-              </button>
-            )} */}
           </div>
         </div>
       </div>
@@ -89,15 +81,16 @@ function ProjectTab() {
   );
 
   return (
-    <div className="bg-black">
-      <p className="text-3xl text-center text-white">My Works</p>
-      <div className="mt-20 lg:flex lg:flex-wrap justify-center">
+    <div className="bg-black py-10">
+      <p className="text-3xl text-center text-white mb-10">
+        Showcasing my <span>Art of Work</span>
+      </p>
+      <div className="flex flex-wrap justify-center">
         {projects.map((project, index) => (
           <ProjectThumbnail
             key={index}
             imageUrl={project.imageUrl}
             projectLink={project.projectLink}
-            githubLink={project.githubLink}
             description={project.description}
           />
         ))}

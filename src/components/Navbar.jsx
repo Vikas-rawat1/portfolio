@@ -1,12 +1,6 @@
-// import Typewriter from "typewriter-effect";
-// import Button from "@mui/material/Button";
-// import Stack from '@mui/material/Stack';
+import { RiHammerLine, RiLineFill, RiMenu3Line } from "react-icons/ri";
 import "../App.css";
-// import About from "./About";
-// import Menu from "../components/Menu";
 import { Link } from "react-router-dom";
-// import { Document, Page } from "react-pdf";
-// import { Document, Page } from "@react-pdf/renderer";
 function Navbar() {
   // const pageUrl = "Images/vikasresume.pdf";
   return (
@@ -23,7 +17,7 @@ function Navbar() {
         <div>
           <ul className="flex font-poppins font-bold gap-8">
             <Link to="/">Home</Link>
-            <Link to="About">About</Link>
+            {/* <Link to="About">About</Link> */}
             <Link to="/projecttab">Projects</Link>
           </ul>
         </div>
@@ -36,9 +30,17 @@ function Navbar() {
       {/* <Menu /> */}
 
       {/* Mobile Logo  */}
-      <div className="bg-black">
-        <div className="lg:hidden justify-center flex items-center font-saira-stencil font-bold text-2xl">
+      <div className="bg-black text-white">
+        <div className="lg:hidden px-6 justify-between flex items-center font-saira-stencil font-bold text-2xl">
           <img src="Images/head.gif" alt="Gif" className="h-14" />
+          <RiMenu3Line size={36} className="text-white"/>
+
+          {/* <div className="text-white">
+            <ul className="flex font-poppins font-bold gap-8">
+              <Link to="/">Home</Link>
+              <Link to="/projecttab">Projects</Link>
+            </ul>
+          </div> */}
         </div>
       </div>
 
