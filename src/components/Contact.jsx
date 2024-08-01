@@ -1,6 +1,6 @@
 import { RiMailFill } from "react-icons/ri";
 import { useForm, ValidationError } from "@formspree/react";
-import { useState } from "react"; // Import useState hook
+import { useState } from "react"; 
 
 function Contact() {
   const [state, handleSubmit] = useForm("xkndynwy");
