@@ -53,7 +53,6 @@ function ProjectTab() {
         "A reimagined coffee website featuring modern design elements, interactive components, and rich media content for a captivating experience.",
     },
   ];
-
   const ProjectThumbnail = ({ imageUrl, projectLink, description }) => (
     <Tilt
       options={defaultOptions}
