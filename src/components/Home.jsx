@@ -29,7 +29,6 @@ function Home() {
               </p>
             </div>
           </div>
-
           <div>
             <div className="lg:text-left ml-14 mt-20  top-96  absolute lg:top-40 text-white m-auto lg:ml-60  ">
               <div class="relative duration-300  hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_60deg)] group border border-sky-900  overflow-hidden rounded-2xl  h-52 w-72 bg-sky-800 p-5 flex flex-col items-start gap-4">
