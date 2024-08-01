@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <>
-      <div className=" relative">
+      <div className=" relative overflow-hidden">
         <img src="Images/bg.gif" alt="" className="w-full h-screen" />
         <div className="lg:grid lg:grid-cols-2">
           <div>
