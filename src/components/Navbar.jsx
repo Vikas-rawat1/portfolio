@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      {/* Desktop Navbar */}
+      {/* Desktop Navar */}
       <div className="hidden lg:flex lg:justify-between lg:items-center bg-black text-white px-6 py-4">
         <div>
           <ul>
