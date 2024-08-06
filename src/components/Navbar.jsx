@@ -15,7 +15,7 @@ function Navbar() {
       {/* Desktop Navbar */}
       <div className="hidden lg:flex lg:justify-between lg:items-center bg-black text-white px-6 py-4">
         <div>
-          <ul
+          <ul>
             <li className="font-saira-stencil font-bold text-2xl">
               <img src="Images/head.gif" alt="Logo" className="h-16" />
             </li>
