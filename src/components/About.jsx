@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 function About() {
   const [skills, setSkills] = useState("skills");
@@ -131,6 +132,9 @@ function About() {
                       <Tooltip title="React">
                         <img src="Images/Skills/react.png" alt="React" />
                       </Tooltip>
+                      <Tooltip title="React">
+                        <img src="Images/Skills/tailwind.png" alt="React" />
+                      </Tooltip>
                     </div>
                   </>
                 )}
@@ -167,7 +171,8 @@ function About() {
             </div>
           </div>
         </div>
-        <Projects />
+        {/* <Projects /> */}
+        <Contact/>
       </div>
     </>
   );

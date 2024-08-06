@@ -16,7 +16,7 @@ function Contact() {
 
   return (
     <>
-      <div className="bg-black text-white">
+      <div className="bg-black text-white mt-20">
         <div className="relative">
           <p className="ml-10 lg:rotate-90 lg:absolute lg:mt-10 lg:ml-16">
             <span className="border w-16 lg:w-4/5 flex"></span> CONTACT
