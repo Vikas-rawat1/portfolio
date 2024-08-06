@@ -10,7 +10,7 @@ function Navbar() {
     setToggle(!toggle);
   };
 
-  return (
+  return 
     <>
       {/* Desktop Navbar */}
       <div className="hidden lg:flex lg:justify-between lg:items-center bg-black text-white px-6 py-4">
