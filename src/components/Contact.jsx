@@ -14,7 +14,7 @@ function Contact() {
     }
   };sadsa
 sfdadsf
-  return (asd
+  return (
     <>
       <div className="bg-black text-white mt-20">
         <div className="relative">
