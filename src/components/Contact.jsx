@@ -12,7 +12,7 @@ function Contact() {
     if (state.succeeded) {
       setFormData({ name: "", email: "", message: "" });
     }
-  };sd
+  };
 
   return (
     <>
