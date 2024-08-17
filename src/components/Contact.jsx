@@ -12,8 +12,8 @@ function Contact() {
     if (state.succeeded) {
       setFormData({ name: "", email: "", message: "" });
     }
-  }; 
-s
+  };
+
   return (
     <>
       <div className="bg-black text-white mt-20">
