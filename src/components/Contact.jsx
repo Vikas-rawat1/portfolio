@@ -13,7 +13,7 @@ function Contact() {
       setFormData({ name: "", email: "", message: "" });
     }
   }; 
-s
+ssd
   return (
     <>
       <div className="bg-black text-white mt-20">
